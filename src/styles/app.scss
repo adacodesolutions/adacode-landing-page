@@ -1,0 +1,10 @@
+@import './pages/home.scss';
+@import './components/navbar.scss';
+@import './components/workshopcard.scss';
+
+.container {
+  background-color: black;
+  padding: 0 20vmax;
+  color: white;
+  min-height: 100vh;
+}

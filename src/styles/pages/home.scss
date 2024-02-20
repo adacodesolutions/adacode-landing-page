@@ -1,0 +1,85 @@
+.hero_section {
+  padding-top: 10vmax;
+  display: flex;
+  gap: 1rem;
+
+  .hero_left {
+    width: 50%;
+
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 400;
+    }
+
+    .button_wrapper {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      display: flex;
+      gap: 1rem;
+
+      .button_left {
+        padding: 1rem;
+        background: linear-gradient(to right, #007A3C, #004F70);
+        border: none;
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+
+        &:hover {
+          transition: ease-in-out 0.3s;
+        }
+      }
+
+      .button_right {
+        cursor: pointer;
+        padding: 1rem;
+        background: linear-gradient(to right, #004F70, #007A3C);
+        border: none;
+        color: white;
+        border-radius: 10px;
+      }
+
+    }
+  }
+
+  .hero_right {
+    border-left: 2px solid greenyellow;
+
+    .box {
+      width: 50px;
+      height: 300px;
+      background-color: #004F70;
+    }
+  }
+}
+
+
+.angle_investing {
+  height: 100vh;
+
+  .workshopcards_wrapper {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  h4 {
+    padding: 2vmax 0;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+}
+
+.seperator_image {
+  color: #fff;
+  height: 1.06667px;
+  width: 288px;
+  margin: 48px auto;
+  max-width: 100%;
+  border: 0;
+  display: block;
+  cursor: auto;
+  transition: all 0s ease 0s;
+}
