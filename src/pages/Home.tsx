@@ -1,5 +1,5 @@
 import logo_light from "../assets/logo-light.png";
-import WorkshopCard from "../components/WorkshopCard";
+import { WorkshopCard, ExclusiveCard } from "../components/";
 
 function Home() {
   return (
@@ -49,6 +49,35 @@ function Home() {
           />
         </div>
         <Seperator />
+      </section>
+      <section className="angle_investing">
+        <h4>Here's Why You Should Join Us!</h4>
+        <p>
+          Of like-minded people looking to build, accelerate or enhance their
+          existing careers by learning strategic growth frameworks.Through this
+          community, you can….
+        </p>
+        <div className="exclusive_card_container">
+          <ExclusiveCard
+            imgUrl=""
+            title="Collaborate on real-life projects"
+            description="Whole experience was great. Even after having zero knowledge about the Cloud Data Engineering field, lots of doubts and concepts were cleared"
+          />
+          <ExclusiveCard
+            imgUrl=""
+            title="Collaborate on real-life projects"
+            description="Excellent content and a great course to kickstart my Cloud Data Engineering journey."
+          />
+          <ExclusiveCard
+            imgUrl=""
+            title="Collaborate on real-life projects"
+            description="Meet and learn with others pursuing the same path as you"
+          />
+        </div>
+        <Seperator />
+        <section>
+          <h4>How Does the program work?</h4>
+        </section>
       </section>
     </>
   );

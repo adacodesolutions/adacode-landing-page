@@ -1,5 +1,3 @@
-import { IoClose } from "react-icons/io5";
-
 function Navbar() {
   return (
     <div className="navbar_container">
