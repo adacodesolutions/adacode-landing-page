@@ -88,6 +88,18 @@
   gap: 1rem;
 }
 
+.how_does_section {
+  min-height: 100vh;
+
+  .endcard_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 
 @media screen and (max-width:850px) {
   .hero_section {
@@ -100,8 +112,4 @@
       display: none;
     }
   }
-
-  .angle_investing {}
-
-  .workshopcards_wrapper {}
 }

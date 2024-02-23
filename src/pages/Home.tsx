@@ -1,5 +1,10 @@
 import logo_light from "../assets/logo-light.png";
-import { WorkshopCard, ExclusiveCard } from "../components/";
+import {
+  WorkshopCard,
+  ExclusiveCard,
+  HorizontalVideoCard,
+  EndCard,
+} from "../components/";
 
 function Home() {
   return (
@@ -75,8 +80,37 @@ function Home() {
           />
         </div>
         <Seperator />
-        <section>
+        <section className="how_does_section">
           <h4>How Does the program work?</h4>
+          <HorizontalVideoCard
+            imgUrl="https://assets-global.website-files.com/5fdb2866020c200cd7fd7369/61d6be9a05bd9eb56f860a93_ezgif.com-gif-maker%20(2).gif"
+            title="ON-DEMAND VIDEOS"
+            description="Learn the exact roles & responsibilities of a Cloud Data Engineer working on an real life projects and case studies"
+            className="videocard_right"
+          />
+
+          <HorizontalVideoCard
+            imgUrl="https://assets-global.website-files.com/5fdb2866020c200cd7fd7369/61d6be9a05bd9eb56f860a93_ezgif.com-gif-maker%20(2).gif"
+            title="ON-DEMAND VIDEOS"
+            description="Learn the exact roles & responsibilities of a Cloud Data Engineer working on an real life projects and case studies"
+            className="videocard_left"
+          />
+          <HorizontalVideoCard
+            imgUrl="https://assets-global.website-files.com/5fdb2866020c200cd7fd7369/61d6be9a05bd9eb56f860a93_ezgif.com-gif-maker%20(2).gif"
+            title="ON-DEMAND VIDEOS"
+            description="Learn the exact roles & responsibilities of a Cloud Data Engineer working on an real life projects and case studies"
+            className="videocard_right"
+          />
+        </section>
+        <Seperator />
+        <section className="how_does_section">
+          <h4>By the end of the program you’ll have:</h4>
+          <div className="endcard_wrapper">
+            <EndCard content="Make your 0-1 journey in Data engineering, with opportunities to work through real-world Data problems" />
+            <EndCard content="With improved problem-solving skills, break down complex business problems into structural components and come up with solutions that create a massive impact." />
+            <EndCard content="Increased understanding of the Data & Tech  industry through insights from the mentors as well as the community." />
+            <EndCard content="Crack case interviews at top companies as a Data Engineer with the right strategies and approach to follow" />
+          </div>
         </section>
       </section>
     </>
