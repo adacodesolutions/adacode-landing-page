@@ -89,7 +89,6 @@
 }
 
 .how_does_section {
-  min-height: 100vh;
 
   .endcard_wrapper {
     display: flex;
@@ -97,6 +96,19 @@
     gap: 1rem;
     justify-content: center;
     align-items: center;
+  }
+}
+
+.mastercard_wrapper {
+  padding: 4vmax 0rem;
+}
+
+.how_section {
+
+  .howcard_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
   }
 }
 

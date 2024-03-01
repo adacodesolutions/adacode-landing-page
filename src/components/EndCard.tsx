@@ -8,7 +8,7 @@ const EndCard: React.FC<Props> = ({ content }) => {
   return (
     <div className="endcard_container">
       <CiLocationArrow1 />
-      {content}
+      <p>{content}</p>
     </div>
   );
 };

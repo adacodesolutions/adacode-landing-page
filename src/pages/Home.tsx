@@ -4,6 +4,8 @@ import {
   ExclusiveCard,
   HorizontalVideoCard,
   EndCard,
+  MasterCard,
+  HowCard,
 } from "../components/";
 
 function Home() {
@@ -112,6 +114,19 @@ function Home() {
             <EndCard content="Crack case interviews at top companies as a Data Engineer with the right strategies and approach to follow" />
           </div>
         </section>
+      </section>
+      <section className="mastercard_wrapper">
+        <MasterCard />
+      </section>
+      <section className="how_section">
+        <h4>Only for first 200 students </h4>
+        <div className="howcard_wrapper">
+          <HowCard />
+          <HowCard />
+          <HowCard />
+          <HowCard />
+          <HowCard />
+        </div>
       </section>
     </>
   );

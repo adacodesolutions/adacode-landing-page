@@ -1,0 +1,42 @@
+.mastercard_container {
+  border: 0.5px solid #fff;
+  border-radius: 14px;
+
+  .top_mastercard {
+    background-color: #030A21;
+    padding: 2.4rem;
+    border-bottom: 1px solid #fff;
+    border-radius: 10px 10px 0 0;
+
+    h1 {
+      font-size: 1.8rem;
+      font-weight: 400;
+    }
+
+    span {
+      color: var(--master-color);
+    }
+  }
+
+  .bottom_mastercard {
+    padding: 2rem;
+
+    h5 {
+      font-size: 1.4rem;
+      font-weight: 400;
+      padding: 1rem 0;
+    }
+
+    .grey_span_card_container {
+      gap: 1rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .grey_span_card {
+      border-radius: 5px;
+      background-color: #1D2020;
+      padding: 1rem;
+    }
+  }
+}

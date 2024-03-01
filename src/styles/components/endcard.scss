@@ -26,7 +26,18 @@
   display: flex;
 
   svg {
+    margin: 0 1.4rem;
     color: var(--master-color);
-    font-size: 3rem;
+    font-size: 4rem;
+
+  }
+
+  p {
+    overflow-y: auto;
+    max-height: 5em;
+
+    ::-webkit-scrollbar {
+      width: 1px;
+    }
   }
 }
