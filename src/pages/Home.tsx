@@ -1,6 +1,4 @@
-import { useEffect } from "react";
 import logo_light from "../assets/logo-light.png";
-import AOS from 'aos'
 import {
   WorkshopCard,
   ExclusiveCard,
@@ -12,9 +10,6 @@ import {
 
 
 function Home() {
-  useEffect(()=>{
-    AOS.init({duration:2000});
-  },[])
   return (
     <>
       <section className="hero_section">
@@ -42,9 +37,8 @@ function Home() {
       <Seperator />
       <section className="angle_investing">
         <h4>Who is this program for?</h4>
-        <div className="workshopcards_wrapper" data-aos="fade">
+        <div className="workshopcards_wrapper" >
           <WorkshopCard
-          data-aos="fade-right"
             title="Freshers in any field"
             description="Learn the ins & outs of what life looks like as a Cloud Data En. So you can make an informed decision on further choosing your career path."
           />
@@ -71,7 +65,7 @@ function Home() {
           existing careers by learning strategic growth frameworks.Through this
           community, you can….
         </p>
-        <div className="exclusive_card_container" data-aos="fade">
+        <div className="exclusive_card_container" >
           <ExclusiveCard
             imgUrl=""
             title="Online and office classes"
@@ -115,7 +109,7 @@ function Home() {
         <Seperator />
         <section className="how_does_section">
           <h4>By the end of the program you’ll have:</h4>
-          <div className="endcard_wrapper" data-aos="fade">
+          <div className="endcard_wrapper">
             <EndCard content="Make your 0-1 journey in Data engineering, with opportunities to work through real-world Data problems" />
             <EndCard content="With improved problem-solving skills, break down complex business problems into structural components " />
             <EndCard content="Increased understanding of the Data & Tech  industry through insights from the mentors as well as the community." />
@@ -123,12 +117,13 @@ function Home() {
           </div>
         </section>
       </section>
+      <Seperator/>
       <section className="mastercard_wrapper">
         <MasterCard />
       </section>
       <section className="how_section">
         <h4>Only for first 200 students </h4>
-        <div className="howcard_wrapper" data-aos="fade">
+        <div className="howcard_wrapper" >
         <HowCard />
         </div>  
       </section>

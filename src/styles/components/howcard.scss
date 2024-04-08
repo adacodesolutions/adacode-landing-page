@@ -1,4 +1,6 @@
 .howcard_container {
+  font-family:IBM Plex Sans, sans-serif;
+
   display: flex;
   flex-direction: column;
   height: 10rem;
@@ -33,10 +35,12 @@
     display: flex;
     margin: auto;
     p {
-      font-size: 2vmax;
+      font-size: 2.25vmax;
     }
     h3{
-      font-size: 2vmax;
+      font-size: 2.45vmax;
+      margin-block: 5px;
+      font-weight:bold;
     }
   }
 }

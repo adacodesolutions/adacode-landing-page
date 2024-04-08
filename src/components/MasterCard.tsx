@@ -1,8 +1,4 @@
 import React from "react";
-import { FaVideo } from "react-icons/fa";
-import { AiFillThunderbolt } from "react-icons/ai";
-import { BsPersonWalking } from "react-icons/bs";
-import { SiSecurityscorecard } from "react-icons/si";
 
 const MasterCard = () => {
   return (
@@ -25,7 +21,7 @@ const MasterCard = () => {
         <h5>Why learn with Adacode Solutions ?</h5>
         <div className="grey_span_card_container">
           {spanDetails.map((content, index) => (
-            <Span content={content.title} icon={content.iconName} key={index} />
+            <Span content={content.title} key={index} />
           ))}
         </div>
       </section>
