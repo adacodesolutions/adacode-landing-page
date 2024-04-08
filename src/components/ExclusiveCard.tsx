@@ -5,14 +5,14 @@ interface ExclusiveCardProps {
 }
 
 const ExclusiveCard: React.FC<ExclusiveCardProps> = ({
-  imgUrl,
+  // imgUrl,
   title,
   description,
 }: ExclusiveCardProps) => {
   return (
     <div className="exclusivecard_container">
-      <img src={imgUrl} alt={title} />
-      <h4>{title}</h4>
+      {/* <img src={imgUrl} alt={title} /> */}
+      <h5>{title}</h5>
       <p>{description}</p>
     </div>
   );

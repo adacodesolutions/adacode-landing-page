@@ -1,7 +1,7 @@
 function Navbar() {
   return (
     <div className="navbar_container">
-      <h3>Download Brochure</h3>
+      <a download href="/public/adacode-flare.pdf"><h3>Download Brochure</h3></a>
     </div>
   );
 }

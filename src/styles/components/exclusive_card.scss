@@ -2,16 +2,20 @@
   border: 1px solid #ccc;
   border-radius: 7px;
   font-family: IBM Plex Sans, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 15px;
+  line-height: 22px;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.06);
+  background-image: linear-gradient(
+    43deg,
+    rgba(0, 6, 9, 0.46),
+    rgba(0, 41, 19, 0.68)
+  );
   color: rgb(255, 255, 255);
-  height: 297.667px;
+  height: auto;
   width: 309.333px;
   border: 0.833333px solid rgba(255, 255, 255, 0.6);
   margin: 0;
-  padding: 40px 24px;
+  padding: 35px 20px;
   border-collapse: separate;
   overflow: visible;
   cursor: auto;
@@ -20,4 +24,14 @@
   box-sizing: border-box;
   border-radius: 8px;
   overflow-y: hidden;
+  h5 {
+    overflow-y: hidden;
+    letter-spacing: 0px;
+    font-size: 24px;
+    margin-block: 8px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .exclusivecard_container {
+  }
 }

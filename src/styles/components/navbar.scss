@@ -8,7 +8,7 @@
   transform: translateX(-50%);
   padding: 1vmax 15vmax;
   border-radius: 5px;
-  background: linear-gradient(to right, #007A3C, #004F70);
+  background: linear-gradient(to right, #007a3c, #004f70);
   cursor: pointer;
 
   h3 {
@@ -19,5 +19,9 @@
 
   svg {
     margin-left: auto;
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
   }
 }

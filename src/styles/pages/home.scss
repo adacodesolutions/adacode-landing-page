@@ -19,7 +19,7 @@
 
       .button_left {
         padding: 1rem;
-        background: linear-gradient(to right, #007A3C, #004F70);
+        background: linear-gradient(to right, #007a3c, #004f70);
         border: none;
         color: white;
         border-radius: 10px;
@@ -28,31 +28,35 @@
         &:hover {
           transition: ease-in-out 0.3s;
         }
+        a {
+          text-decoration: none;
+        }
       }
 
       .button_right {
         cursor: pointer;
         padding: 1rem;
-        background: linear-gradient(to right, #004F70, #007A3C);
+        background: linear-gradient(to right, #004f70, #007a3c);
         border: none;
         color: white;
         border-radius: 10px;
+        a {
+          text-decoration: none;
+        }
       }
-
     }
   }
 
   .hero_right {
     border-left: 2px solid greenyellow;
 
-    .box {
-      width: 50px;
-      height: 300px;
-      background-color: #004F70;
-    }
+    // .box {
+    //   width: 50px;
+    //   height: 300px;
+    //   background-color: #004f70;
+    // }
   }
 }
-
 
 .angle_investing {
   .workshopcards_wrapper {
@@ -67,6 +71,9 @@
     text-align: center;
     font-size: 2rem;
     font-weight: 500;
+  }
+  p {
+    text-align: center;
   }
 }
 
@@ -85,11 +92,16 @@
 .exclusive_card_container {
   padding: 1rem;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 1rem;
+  ExclusiveCard {
+    padding: 1rem !important;
+    color: black;
+  }
 }
 
 .how_does_section {
-
   .endcard_wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -104,16 +116,20 @@
 }
 
 .how_section {
-
   .howcard_wrapper {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    row-gap: 9px;
+    column-gap: 10px;
+  }
+  h4 {
+    text-align: center;
+    font-size: 25px;
+    margin-block: 5px;
   }
 }
 
-
-@media screen and (max-width:850px) {
+@media screen and (max-width: 850px) {
   .hero_section {
     .hero_left {
       width: 100%;

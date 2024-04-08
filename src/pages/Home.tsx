@@ -1,4 +1,6 @@
+import { useEffect } from "react";
 import logo_light from "../assets/logo-light.png";
+import AOS from 'aos'
 import {
   WorkshopCard,
   ExclusiveCard,
@@ -8,7 +10,11 @@ import {
   HowCard,
 } from "../components/";
 
+
 function Home() {
+  useEffect(()=>{
+    AOS.init({duration:2000});
+  },[])
   return (
     <>
       <section className="hero_section">
@@ -23,8 +29,8 @@ function Home() {
             Cloud Data Engineering with hands-on projects & job-ready skills
           </p>
           <div className="button_wrapper">
-            <button className="button_left">Apply Now</button>
-            <button className="button_right">Demo Call</button>
+          <a href="https://www.adacodesolutions.com/"><button className="button_left">Apply Now</button></a>
+          <a href="tel:9947276566"><button className="button_right">Demo Call</button></a>
           </div>
           <p>Hurry! Only a few seats left.</p>
         </div>
@@ -36,8 +42,9 @@ function Home() {
       <Seperator />
       <section className="angle_investing">
         <h4>Who is this program for?</h4>
-        <div className="workshopcards_wrapper">
+        <div className="workshopcards_wrapper" data-aos="fade">
           <WorkshopCard
+          data-aos="fade-right"
             title="Freshers in any field"
             description="Learn the ins & outs of what life looks like as a Cloud Data En. So you can make an informed decision on further choosing your career path."
           />
@@ -64,22 +71,23 @@ function Home() {
           existing careers by learning strategic growth frameworks.Through this
           community, you can….
         </p>
-        <div className="exclusive_card_container">
+        <div className="exclusive_card_container" data-aos="fade">
           <ExclusiveCard
             imgUrl=""
-            title="Collaborate on real-life projects"
-            description="Whole experience was great. Even after having zero knowledge about the Cloud Data Engineering field, lots of doubts and concepts were cleared"
+            title="Online and office classes"
+            description="Available both online and offline.we ensurean optimal educational experience for all"
           />
-          <ExclusiveCard
+          <ExclusiveCard 
             imgUrl=""
-            title="Collaborate on real-life projects"
-            description="Excellent content and a great course to kickstart my Cloud Data Engineering journey."
+            title="Life Time Placement Assitance"
+            description="We ensure 100% lifetime placement assistance, supporting our students in securing rewarding career opportunities upon course completion."
           />
-          <ExclusiveCard
+          <ExclusiveCard 
             imgUrl=""
-            title="Collaborate on real-life projects"
-            description="Meet and learn with others pursuing the same path as you"
+            title="Course and Project Certification"
+            description="We provide certificates upon successful completion of our courses"
           />
+          
         </div>
         <Seperator />
         <section className="how_does_section">
@@ -107,11 +115,11 @@ function Home() {
         <Seperator />
         <section className="how_does_section">
           <h4>By the end of the program you’ll have:</h4>
-          <div className="endcard_wrapper">
+          <div className="endcard_wrapper" data-aos="fade">
             <EndCard content="Make your 0-1 journey in Data engineering, with opportunities to work through real-world Data problems" />
-            <EndCard content="With improved problem-solving skills, break down complex business problems into structural components and come up with solutions that create a massive impact." />
+            <EndCard content="With improved problem-solving skills, break down complex business problems into structural components " />
             <EndCard content="Increased understanding of the Data & Tech  industry through insights from the mentors as well as the community." />
-            <EndCard content="Crack case interviews at top companies as a Data Engineer with the right strategies and approach to follow" />
+            <EndCard content="Crack case interviews at top companies as a Data Engineer with the right strategies" />
           </div>
         </section>
       </section>
@@ -120,14 +128,12 @@ function Home() {
       </section>
       <section className="how_section">
         <h4>Only for first 200 students </h4>
-        <div className="howcard_wrapper">
-          <HowCard />
-          <HowCard />
-          <HowCard />
-          <HowCard />
-          <HowCard />
-        </div>
+        <div className="howcard_wrapper" data-aos="fade">
+        <HowCard />
+        </div>  
       </section>
+      <Seperator />
+      
     </>
   );
 }
