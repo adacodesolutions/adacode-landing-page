@@ -1,15 +1,17 @@
 .howcard_container {
+  width: 100%;
   font-family:IBM Plex Sans, sans-serif;
-
+  overflow: hidden;
+  width: 18rem;
   display: flex;
   flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
   height: 10rem;
   border: 0.5px solid white;
   border-radius: 10px;
-  height: 10rem;
-  width: 27rem;
   align-items:center;
-  display: flex;
   padding: 1rem;
   background-image: linear-gradient(
     43deg,
@@ -18,10 +20,11 @@
   );
 
   p {
-    font-size: 1vmax;
+    font-size: 1.1vmax;
+    margin: 2px;
   }
   h3{
-    font-size:1.4vmax;
+    font-size:1.8vmax;
   }
 }
 @media screen and (max-width: 850px) {
@@ -29,8 +32,7 @@
     height: 10rem;
     border: 0.5px solid white;
     border-radius: 10px;
-    height: 10rem;
-    width: 20rem;
+    width: 90%;
     align-items: center;
     display: flex;
     margin: auto;

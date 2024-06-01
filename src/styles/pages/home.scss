@@ -105,7 +105,7 @@
   .endcard_wrapper {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 8px;
     justify-content: center;
     align-items: center;
   }
@@ -117,10 +117,16 @@
 
 .how_section {
   .howcard_wrapper {
+    // width: 100%;
+    // display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    // gap:5px;
+    // align-items: center;
     display: flex;
+    gap: 15px;
     flex-wrap: wrap;
-    row-gap: 9px;
-    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
   }
   h4 {
     text-align: center;
@@ -131,6 +137,7 @@
 
 @media screen and (max-width: 850px) {
   .hero_section {
+
     .hero_left {
       width: 100%;
       padding: 1rem;
@@ -140,4 +147,11 @@
       display: none;
     }
   }
+  .how_section {
+      .howcard_wrapper{
+        gap: 8px;
+
+      }
+  }
+
 }

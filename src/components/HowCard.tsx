@@ -22,7 +22,7 @@ const HowCard = () => {
     <>
     {
       details.map((content,index)=>(
-      <div key={index} className="howcard_container">
+    <div key={index} className="howcard_container">
       <h3>{content.title}</h3>
       <p>{content.paragraph}</p>
     </div>

@@ -11,7 +11,7 @@ function Footer() {
           <div className="footer-logo">
             <a className="footer-logo-link" href="#">
               <span className="hidden-link-text">LOGO</span>
-              <h1>ADACODE</h1>
+              <h2>ADACODE</h2>
             </a>
           </div>
           <div className="footer-menu">
