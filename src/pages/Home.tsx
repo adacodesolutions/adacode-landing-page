@@ -1,4 +1,7 @@
 import logo_light from "../assets/logo-light.png";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 import {
   WorkshopCard,
   ExclusiveCard,
@@ -10,11 +13,13 @@ import {
 
 
 function Home() {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <>
       <section className="hero_section">
         <div className="hero_left">
-          <img src={logo_light} alt="company logo" height={50} width={50} />
           <h1>
             Become a Software Developer in 6 Months <br />
             and crack a role at big tech
@@ -30,15 +35,17 @@ function Home() {
           <p>Hurry! Only a few seats left.</p>
         </div>
         <div className="hero_right">
-          <div className="box"></div>
+          <div className="box">
+              <img src={logo_light} alt="company logo" height={230} width={230} />
+          </div>
         </div>
       </section>
 
       <Seperator />
-      <section className="angle_investing">
+      <section className="angle_investing" data-aos="fade-up"  data-aos-duration="500">
         <h4>Who is this program for?</h4>
         <div className="workshopcards_wrapper" >
-          <WorkshopCard
+          <WorkshopCard 
             title="Freshers in any field"
             description="Learn the ins & outs of what life looks like as a Cloud Data En. So you can make an informed decision on further choosing your career path."
           />
@@ -58,7 +65,7 @@ function Home() {
         </div>
         <Seperator />
       </section>
-      <section className="angle_investing">
+      <section className="angle_investing" data-aos="fade-up"  data-aos-duration="500">
         <h4>Here's Why You Should Join Us!</h4>
         <p>
           Of like-minded people looking to build, accelerate or enhance their
@@ -107,7 +114,7 @@ function Home() {
           />
         </section>
         <Seperator />
-        <section className="how_does_section">
+        <section className="how_does_section" data-aos="fade-left"  data-aos-duration="500">
           <h4>By the end of the program you’ll have:</h4>
           <div className="endcard_wrapper">
             <EndCard content="Make your 0-1 journey in Data engineering, with opportunities to work through real-world Data problems" />
@@ -118,11 +125,11 @@ function Home() {
         </section>
       </section>
       <Seperator/>
-      <section className="mastercard_wrapper">
+      <section className="mastercard_wrapper"  data-aos="fade-right"  data-aos-duration="500">
         <MasterCard />
       </section>
-      <section className="how_section">
-        <h4>Only for first 200 students </h4>
+      <section className="how_section"  data-aos="zoom"  data-aos-duration="500">
+        <h4>Only for first 300 students </h4>
         <div className="howcard_wrapper" >
         <HowCard />
         </div>  

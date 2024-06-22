@@ -1,15 +1,18 @@
 .exclusivecard_container {
+  overflow: hidden;
   border: 1px solid #ccc;
+  // background: linear-gradient(to right, #007a3c, #004f70);
+  background:black;
   border-radius: 7px;
   font-family: IBM Plex Sans, sans-serif;
   font-size: 15px;
   line-height: 22px;
   text-align: center;
-  background-image: linear-gradient(
-    43deg,
-    rgba(0, 6, 9, 0.46),
-    rgba(0, 41, 19, 0.68)
-  );
+  // background-image: linear-gradient(
+  //   43deg,
+  //   rgba(0, 6, 9, 0.46),
+  //   rgba(0, 41, 19, 0.68)
+  // );
   color: rgb(255, 255, 255);
   height: auto;
   width: 309.333px;
@@ -31,4 +34,7 @@
     margin-block: 5px;
   }
 }
-
+.exclusivecard_container:hover{
+  background: linear-gradient(to right, #007a3d67, #004e7059);
+  transition: 0.1s;
+}

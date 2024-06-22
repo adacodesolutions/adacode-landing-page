@@ -1,8 +1,6 @@
 .endcard_container {
   background-attachment: scroll;
-  background-color: rgba(0, 0, 0, 0);
-  background-image: linear-gradient(43deg, rgba(0, 6, 9, 0.46),rgba(0, 41, 19, 0.68)
-  );
+  background: rgba(0, 0, 0, 0);
   background-position: 0% 0%;
   background-repeat: repeat;
   color: rgb(255, 255, 255);
@@ -40,4 +38,7 @@
       width: 1px;
     }
   }
+}
+.endcard_container:hover{
+  background:  linear-gradient(to right, #007a3d67, #004e7059);
 }

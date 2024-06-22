@@ -1,31 +1,32 @@
 .howcard_container {
-  width: 100%;
+  width: 22rem;
   font-family:IBM Plex Sans, sans-serif;
   overflow: hidden;
-  width: 18rem;
   display: flex;
   flex-direction: column;
   justify-items: center;
   align-items: center;
-  justify-content: center;
-  height: 10rem;
-  border: 0.5px solid white;
+  // justify-content: center;
+  height: 12rem;
+  border: 0.2px solid rgba(255, 255, 255, 0.514);
   border-radius: 10px;
   align-items:center;
-  padding: 1rem;
-  background-image: linear-gradient(
-    43deg,
-    rgba(0, 6, 9, 0.46),
-    rgba(0, 41, 19, 0.68)
-  );
-
+  // padding: 2rem;
+  background: black;
   p {
-    font-size: 1.1vmax;
-    margin: 2px;
+    font-size: 1.3vmax;
+    margin-inline-start: 10px;
+    margin-block-start: 12px;
   }
   h3{
-    font-size:1.8vmax;
+    overflow-y: hidden;
+    letter-spacing: 0px;
+    font-size: 24px;
+    margin-block-start: 2rem;
   }
+}
+.howcard_container:hover{
+  background:  linear-gradient(to right, #007a3d67, #004e7059);
 }
 @media screen and (max-width: 850px) {
   .howcard_container {
@@ -37,11 +38,11 @@
     display: flex;
     margin: auto;
     p {
-      font-size: 2.25vmax;
+      font-size: 2.4vmax;
     }
     h3{
-      font-size: 2.45vmax;
-      margin-block: 5px;
+      font-size: 2.8vmax;
+      margin-block-start: 15px;
       font-weight:bold;
     }
   }

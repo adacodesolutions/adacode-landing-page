@@ -2,14 +2,14 @@ const HowCard = () => {
   const details = [
     {
       title: "Personalized Attention",
-      paragraph: "With fewer students initially enrolled, those in the first 200 often receive more personalized attention from instructors",
+      paragraph: "With fewer students initially enrolled, those in the first 300 often receive more personalized attention from instructors",
     },
     {
       title: "Preferred Timing",
       paragraph: " more flexibility in choosing their preferred schedule for courses, including popular time slots or convenient class timings",
     },
     {
-      title: " Early Access to In-Demand Courses",
+      title: " Early Access To Courses",
       paragraph: "early access to highly sought-after courses in programming languages, software development, data science, or other specialized areas",
     },
     {
