@@ -12,6 +12,7 @@
       font-weight: 500;
       line-height: 2.9rem;
       overflow: hidden;
+
     }
 
     p{
@@ -66,6 +67,8 @@
 }
 
 .angle_investing {
+  overflow: hidden;
+  height: auto;
   .workshopcards_wrapper {
     display: flex;
     gap: 1rem;

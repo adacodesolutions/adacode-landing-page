@@ -11,7 +11,6 @@ import {
   HowCard,
 } from "../components/";
 
-
 function Home() {
   useEffect(() => {
     AOS.init();
@@ -21,8 +20,8 @@ function Home() {
       <section className="hero_section">
         <div className="hero_left">
           <h1>
-            Become a Software Developer in 6 Months <br />
-            and crack a role at big tech
+              BECOME A SOFTWARE DEVELOPER IN  6 MONTHS 
+              AND CRACK A ROLE AT BIG TECH
           </h1>
           <p>
             Learn from the top 1% in the industry and launch your career in
@@ -91,7 +90,7 @@ function Home() {
           
         </div>
         <Seperator />
-        <section className="how_does_section">
+        <section className="how_does_section" data-aos="fade-up"  data-aos-duration="500"c >
           <h4>How Does the program work?</h4>
           <HorizontalVideoCard
             imgUrl="https://assets-global.website-files.com/5fdb2866020c200cd7fd7369/61d6be9a05bd9eb56f860a93_ezgif.com-gif-maker%20(2).gif"
@@ -114,7 +113,7 @@ function Home() {
           />
         </section>
         <Seperator />
-        <section className="how_does_section" data-aos="fade-left"  data-aos-duration="500">
+        <section className="how_does_section" data-aos="fade-up"  data-aos-duration="500">
           <h4>By the end of the program you’ll have:</h4>
           <div className="endcard_wrapper">
             <EndCard content="Make your 0-1 journey in Data engineering, with opportunities to work through real-world Data problems" />
@@ -125,10 +124,10 @@ function Home() {
         </section>
       </section>
       <Seperator/>
-      <section className="mastercard_wrapper"  data-aos="fade-right"  data-aos-duration="500">
+      <section className="mastercard_wrapper"  data-aos="fade-up"  data-aos-duration="500">
         <MasterCard />
       </section>
-      <section className="how_section"  data-aos="zoom"  data-aos-duration="500">
+      <section className="how_section"  data-aos="fade-up"  data-aos-duration="500">
         <h4>Only for first 300 students </h4>
         <div className="howcard_wrapper" >
         <HowCard />
